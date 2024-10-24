@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="style/site.css">
+    <link rel="stylesheet" href="style/contato.css">
+    <script src="JavaScript/javas.js" defer></script>
+    <link rel="stylesheet" href="style/servicos.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="style_titulo">
+            <img src="imagens/LOGO.png" alt="" width="" height="150">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form_contato">
+            <div class="formulario_contato">
+                <form onsubmit="validateForm()">
+                    <h2 class="tituloContato">Formulário de Contato</h2>
+                    <input type="text" id="name" name="nome" placeholder="Seu nome*">
+                    <input type="email" id="email" name="nome" placeholder="Seu email*">
+                    <input type="text" id="Assunto" name="nome" placeholder="Assunto*">
+                    <textarea name="Mensagem" id="Mensagem" cols="104 block" rows="10"
+                        placeholder="Mensagem*"></textarea>
+
+                    <div class="botao_form">
+                        <button onclick="toggleButton()" type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <h1 class="titulo_servicos">Serviços Prestados</h1>
+        <ul class="servicos_lista">
+            <li onclick="abrirSite()">Consulta Oftalmológica</li>
+            <li onclick="abrirSite()">Agendamento de visita presencial</li>
+            <li onclick="abrirSite()">Encomenda de produtos</li>
+            <li onclick="abrirSite()">Polimento de armações e lentes</li>
+            <li onclick="abrirSite()">Troca de armações</li>
+            <li onclick="abrirSite()">Manutenção de óculos</li>
+        </ul>
+        <h2 class="tituloContato">Informações</h2>
+        <section class="areaInfo">
+            <div class="informacoes" onmouseover="changeTextColor(this)" onmouseout="resetTextColor(this)">
+                <img id="relogio" src="imagens_contato/relogio.png" alt="">
+                <h3>Horario de funcionamento:</h3>
+                <p>Segunda a Sexta: 08:00-18:00</p>
+                <p>Sábado: 08:00-16:00</p>
+            </div>
+            <div class="informacoes" onmouseover="changeTextColor(this)" onmouseout="resetTextColor(this)"
+                onclick="abrirMapa()">
+                <img src="imagens_contato/mapa.png" alt="Endereço">
+                <h3>Endereço</h3>
+                <a href="www.google.com/maps">Recanto das Emas</a><br>
+            </div>
+            <div class="informacoes" onmouseover="changeTextColor(this)" onmouseout="resetTextColor(this)"
+                onclick="abrirInsta()">
+                <img src="imagens_contato/insta.png" alt="Instagram">
+                <h3>Instagram</h3>
+                <a href="https://www.instagram.com/">@otica_bento</a>
+            </div>
+            <div class="informacoes" onmouseover="changeTextColor(this)" onmouseout="resetTextColor(this)">
+                <img src="imagens_contato/fone.png" alt="Telefone">
+                <h3>Telefone</h3>
+                <p>(61) 99858-4016</p>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <table>
+            <div class="contato_footer">
+                <tr>
+                    <td>Ajuda</td>
+                    <td rowspan="2"><img id="logo_rod" src="imagens/LOGO.png" alt="" /></td>
+                    <td>Redes Sociais</td>
+                </tr>
+            </div>
+            <tr>
+                <td>
+                    <a href="faq.html">FAQ</a> |
+                    <a href="termos_de_uso.html">Termos de Uso</a>
+                </td>
+                <td>
+                    <a href="https://www.facebook.com/meuwebsite/">Facebook</a> |
+                    <a href="https://www.instagram.com/meuwebsite/">Instagram</a>
+                </td>
+            </tr>
+        </table>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<link rel="stylesheet" href="form.css">
+<body>
+    <form action=""> <!--action é o destino do formulario-->
+        <h2>Cadastro de Paciente</h2>
+        <label for=""> Digite seu nome:</label><!--label é a descrição do campo-->
+        <input type="text" id="Nome" name="nome" placeholder="Nome" required> <!--input não é fechado-->
+        <label for=""> Digite seu CPF:</label>
+        <input type="number" id="CPF" name="CPF" placeholder="CPF" required>
+        <label for=""> Digite seu endereço:</label>
+        <input type="text" id="Endereço" name="Endereço" placeholder="Endereço" required>
+        <label for=""> Digite seu telefone:</label>
+        <input type="number" id="Telefone" name="Telefone" placeholder="Telefone" required>
+        <label for=""> Digite seu email:</label>
+        <input type="email" id="Email" name="Email" placeholder="Email" required>
+        <label for=""> Digite sua data de nascimento:</label>
+        <input type="date" id="Data de Nascimento" name="Data de Nascimento" placeholder="Data de Nascimento" required>
+        <label for=""> Digite seu login:</label>
+        <input type="text" id="Login" name="Login" placeholder="Nome de usuario" required>
+        <label for=""> Digite sua senha:</label>
+        <input type="password" id="Senha" name="Senha" placeholder="Senha" required>
+        <div id="Sexo">
+            <label for="">Sexo:</label>
+            <div id="opcao">
+                <input type="radio" id="Masculino" name="Sexo" value="Masculino">
+                <label for="">Masculino</label>
+            </div>
+            <div id="opcao">
+                <input type="radio" id="Feminino" name="Sexo" value="Feminino">
+                <label for="">Feminino</label>
+            </div>
+            <div id="opcao"> 
+                <input type="radio" id="Outro" name="Sexo" value="Outro">
+                <label for="">Outro</label>
+            </div>
+        </div>
+
+        <div id="Selecao">
+            <label for="">Interesse:</label>
+            <div id="opcao"> 
+                <input type="checkbox" name="bike">
+                <label for="">Bicicleta</label>
+            </div>
+            <div id="opcao"> 
+                <input type="checkbox" name="carro">
+                <label for="">Carro</label>
+            </div>
+            <div id="opcao">
+                <input type="checkbox" name="correndo">
+                <label for="">Correndo</label>
+            </div>
+        </div>
+
+        <div id="suspenso">
+            <label for="">Estado:</label>
+            <select name="Estado" id="Estado">
+                <option value="">Selecione um estado</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+            </select>
+        </div>
+
+        <div id="arquivo">
+            <input type="file" id="arquivo">
+        </div>
+
+        <div id="botao"><!--coloca os botoes lado a lado-->
+            <button id="gravar" type="submit">Gravar</button>
+            <button id="limpar" type="reset">Limpar</button>
+        </div>
+    </form>
+</body>
+</html>

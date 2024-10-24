@@ -1,0 +1,104 @@
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 20px;
+    margin: 0;
+    background-image: url('Design sem nome.png');
+    
+}
+
+form{
+    max-width: 400px;
+    margin: auto;
+    background-color: rgba(255, 48, 48, 0.61);
+    padding: 20px;
+    border-radius: 10px;
+    flex-direction: column;
+    display: flex;
+    font-weight: bold;
+}
+
+h2{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    
+}
+
+label{
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="text"], input[type="number"], input[type="email"]{
+    color: black;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #000000;
+    border-radius: 5px; /*aredonda as bordas*/
+    background-color: #ffe7c7;
+}
+
+button {
+    width: 45%;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor:pointer;
+    justify-content: space-between;
+}
+
+#limpar{
+    background-color: #af4c4c;
+    color: white;
+    
+}
+
+#gravar{
+    background-color: #4faf4c;
+    color: white;
+    
+}
+
+button:hover{
+    transform: translateY(-2px)
+}
+button:active{
+    transform: translateY(0px)
+}
+#botao{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;  
+   
+}
+
+#Sexo{
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+#opcao{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+#suspenso{
+    margin-top: 5px;
+    margin-bottom: 15px ;
+}
+
+#Mensagem{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    resize: vertical;
+    border-radius: 5px;
+    background-color: #ffe7c7;
+}

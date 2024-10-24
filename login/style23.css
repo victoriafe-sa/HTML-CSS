@@ -1,0 +1,101 @@
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 20px;
+    margin: 0;
+    background: radial-gradient(circle, rgb(151, 57, 189), rgb(2, 60, 184));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form{
+    max-width: 800px;
+    margin:auto;
+    background-color: rgba(194, 155, 216, 0.363);
+    padding: 20px;
+    border-radius: 10px;
+    flex-direction: column;
+    display: flex;
+    font-weight: bolder;
+    
+}
+
+h2{
+    color: rgb(0, 0, 0);
+    text-align: center; 
+    margin-bottom: 25px;
+}
+
+label{
+    margin-bottom: 5px;
+    display: block;
+    
+}
+
+input[type="text"], input[type="password"]{
+    color: black;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #000000;
+    border-radius: 5px; /*aredonda as bordas*/
+    background-color: #dbbbe7;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 7px;
+    cursor:pointer;
+    justify-content: center;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-self:last baseline;
+    
+}
+
+button[type="reset"]{
+    background-color: red;
+    margin-left: 5px;
+}
+button[type="submit"]{
+    background-color: rgb(35, 172, 108);
+    margin-right: 10px; 
+}
+
+#lembrar {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+a{
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+#esqueceu {
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+}
+#botao{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px; 
+}

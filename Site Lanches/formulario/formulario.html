@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contato - André Lanches</title>
+</head>
+<link rel="stylesheet" href="form.css">
+<body>
+    <form action="">
+        <h2>Formulario de contato</h2>
+
+        <label for="">Nome Completo</label>
+        <input type="text" name="Nome" id="Nome" placeholder="Nome Completo" required>
+        <label for="">Email</label>
+        <input type="email" name="Email" id="Email" placeholder="Email" required>
+        <label for="">Telefone</label>
+        <input type="number" name="Telefone" id="Telefone" placeholder="Telefone" required>
+        <label for="">Assunto</label>
+        <input type="text" name="Assunto" id="Assunto" placeholder="Assunto" required>
+        <label for="">Mensagem</label>
+        <textarea name="Mensagem" id="Mensagem" cols="47 block" rows="10" placeholder="Mensagem" required></textarea>
+
+        <div id="Sexo">
+            <label for="">Sexo:</label>
+            <div id="opcao">
+                <input type="radio" id="Masculino" name="Sexo" value="Masculino">
+                <label for="">Masculino</label>
+            </div>
+            <div id="opcao">
+                <input type="radio" id="Feminino" name="Sexo" value="Feminino">
+                <label for="">Feminino</label>
+            </div>
+            <div id="opcao"> 
+                <input type="radio" id="Outro" name="Sexo" value="Outro">
+                <label for="">Outro</label>
+            </div>
+        </div>
+
+        <div id="Selecao">
+            <label for="">Preferência de Contato:</label>
+            <div id="opcao"> 
+                <input type="checkbox" name="email">
+                <label for="">Desejo receber notificações por e-mail</label>
+            </div>
+            <div id="opcao"> 
+                <input type="checkbox" name="sms">
+                <label for="">Desejo receber notificações por SMS</label>
+            </div>
+            <div id="opcao">
+                <input type="checkbox" name="telefone">
+                <label for="">Desejo ser contatado por telefone</label>
+            </div>
+        </div>
+
+        <div id="suspenso">
+            <label for="">Escolha de Serviço:</label>
+            <select name="Estado" id="Estado">
+                <option value="">Serviço desejado</option>
+                <option value="">Suporte Técnico</option>
+                <option value="">Reclamações</option>
+                <option value=""> Sugestões</option>
+                <option value="">Elogios</option>
+                <option value="">Outro</option>
+            </select>
+        </div>
+
+        <div id="botao"><!--coloca os botoes lado a lado-->
+            <button id="gravar" type="submit">Gravar</button>
+            <button id="limpar" type="reset">Limpar</button>
+        </div>
+    </form>
+</body>
+</html>
